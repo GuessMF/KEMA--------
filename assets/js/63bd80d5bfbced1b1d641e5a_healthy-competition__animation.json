@@ -13,7 +13,7 @@
       "w": 160,
       "h": 160,
       "u": "",
-      "p": "../../assets/images/Smile_eyes_Left_camisa_rojo.png",
+      "p": "./assets/images/Smile_eyes_Left_camisa_rojo.png",
       "e": 1
     },
     {
@@ -21,7 +21,7 @@
       "w": 160,
       "h": 160,
       "u": "",
-      "p": "../../assets/images/Smile_eyes_Right_rojo.png",
+      "p": "./assets/images/Smile_eyes_Right_rojo.png",
       "e": 1
     }
   ],

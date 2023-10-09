@@ -1,0 +1,106 @@
+.card-text {
+  color: #fffff7;
+  padding-left: var(--page-outer-margin);
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 1024px) {
+  .card-text {
+    padding: initial;
+  }
+}
+.card-text.is-visible {
+  display: block;
+}
+.card-text__heading {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+.card-text__heading__index {
+  display: block;
+  overflow: hidden;
+  padding-right: 15px;
+}
+.card-text__heading__index span {
+  display: block;
+}
+@media (max-width: 1023px) {
+  .card-text__heading__index {
+    font-size: 3.125rem;
+  }
+}
+.card-text__heading__title {
+  display: block;
+  overflow: hidden;
+  padding-right: 45px;
+  /* max-width: 95vw; */
+}
+.card-text__heading__title span {
+  z-index: 5;
+}
+.card-text__heading__title .line {
+  background-color: #cdfb52;
+  color: #1c1616;
+  display: block;
+  font-family: NeueHaasGrotDisp-76BoldItalic;
+  font-size: 3.5625rem;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  /* line-height: 119%; */
+  line-height: 80%;
+  padding-left: 13px;
+  /* padding-right: 25px;
+  padding-top: 0.3125rem; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  /* text-align: center; */
+  text-align: left;
+  /* white-space: nowrap; */
+}
+@media (max-width: 1023px) {
+  .card-text__heading__title .line {
+    font-size: 2.25rem;
+    padding-right: 15px;
+  }
+}
+.card-text__heading__title .line .word:first-of-type {
+  padding-left: 0.3125rem;
+}
+.card-text__heading__title .line:after {
+  background-color: #cdfb52;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  transform: skew(-10deg);
+  width: 20px;
+  z-index: 2;
+}
+@media (max-width: 1023px) {
+  .card-text__heading__title .line:after {
+    right: -15px;
+    width: 20px;
+  }
+}
+.card-text__paragraph {
+  max-width: 500px;
+  /* pointer-events: none; */
+}
+@media (max-width: 450px) {
+  .card-text__paragraph {
+    max-width: 90vw;
+  }
+}
+.card-text__paragraph h3 .word .char .letter {
+  display: block;
+}
+.card-text__paragraph .line-wrapper {
+  display: block;
+  overflow: hidden;
+}

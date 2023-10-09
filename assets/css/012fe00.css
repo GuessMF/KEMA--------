@@ -1,0 +1,98 @@
+.card-visual {
+  cursor: grab;
+  height: 542px;
+  position: relative;
+  width: 405px;
+  will-change: transform;
+  z-index: 5;
+}
+@media (max-width: 1023px) {
+  .card-visual {
+    max-height: 800px;
+  }
+}
+@media (max-width: 699px) {
+  .card-visual {
+    height: auto;
+    margin: 0 auto 90px;
+    max-height: 390px;
+    max-width: 300px;
+    width: 85vw;
+  }
+}
+.card-visual__image {
+  background-color: #fffff7;
+  border-radius: 7px;
+  box-shadow: 0 4px 4px 4px rgba(28, 22, 22, 0.02);
+  height: 100%;
+  padding: 16px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  width: 100%;
+  border: 1px red solid;
+}
+@media (max-width: 1023px) {
+  .card-visual__image {
+    aspect-ratio: 1/1.35;
+  }
+}
+.card-visual__image__asset {
+  border-radius: 7px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+.card-visual__image__sticker {
+  height: 140px;
+  left: var(--x);
+  position: absolute;
+  top: var(--y);
+  transform: translate(-50%, -50%) scale(0) rotate(var(--rotation));
+  transform-origin: center;
+  transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 140px;
+}
+@media (max-width: 1023px) {
+  .card-visual__image__sticker {
+    height: 80px;
+    width: 80px;
+  }
+}
+.card-visual__info {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 64px);
+  justify-content: space-between;
+  left: 32px;
+  position: absolute;
+  top: 32px;
+  width: calc(100% - 64px);
+  z-index: 200;
+}
+@media (min-width: 1024px) {
+  .card-visual__info {
+    align-items: center;
+    bottom: auto;
+    bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: space-between;
+    left: auto;
+    left: 32px;
+    right: auto;
+    top: auto;
+  }
+}
+.card-visual__info .name {
+  cursor: pointer;
+  font: 400 0.75rem/1 AkzidenzGrotesk-BoldExtended;
+}

@@ -1,0 +1,107 @@
+.cards-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  list-style: none;
+  margin: auto;
+  padding: initial;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cards-list__buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: -10px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 425px;
+  z-index: 25;
+}
+.cards-list__buttons.--bottom.single {
+  bottom: -5%;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 50%;
+  top: auto;
+  transform: translate(-50%);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 1024px) {
+  .cards-list__buttons.--bottom.single {
+    bottom: -20%;
+  }
+}
+.cards-list__buttons button {
+  pointer-events: all;
+}
+@media (max-width: 1023px) {
+  .cards-list__buttons {
+    left: 50%;
+    max-width: 600px;
+    padding: 20px;
+    top: 145px;
+    /* top: 0%; */
+    transform: translate(-50%);
+    width: 100vw;
+  }
+}
+.cards-list__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1;
+}
+@media (max-width: 699px) {
+  .cards-list__item {
+    width: 100vw;
+  }
+}
+.cards-list__item.sticker-visible .card-visual__image__sticker {
+  transform: translate(-50%, -50%) scale(1) rotate(var(--rotation));
+}
+@media (min-width: 1024px) {
+  .cards-list__item {
+    align-items: center;
+    flex-direction: row;
+  }
+  .cards-list__item .card-text {
+    margin-left: 6.25rem;
+  }
+}
+.cards-list__item:nth-of-type(2n) .card-visual {
+  transform: rotate(-3deg);
+}
+.cards-list__item:nth-of-type(odd) .card-visual {
+  transform: rotate(2.4deg);
+}
+.arrow-button {
+  background-color: #cdfb52;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 3.125rem;
+  pointer-events: all;
+  transition: opacity 0.2s ease-out;
+  width: 3.125rem;
+  z-index: 10;
+}
+.arrow-button.--pink {
+  background-color: #f756a3;
+}
+.arrow-button path,
+.arrow-button svg {
+  pointer-events: none;
+}
+.arrow-button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.arrow-button.--previous svg {
+  transform: scaleX(-1);
+}

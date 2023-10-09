@@ -1,0 +1,22 @@
+<svg id="Здоровье" xmlns="http://www.w3.org/2000/svg" width="30" height="34" viewBox="0 0 30 34">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 36px;
+        fill: #fff;
+        font-family: Point;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="_2" data-name="2">
+    <text id="_v_разгонят_все_застойные_явления_v_улучшат_обмен_веществ_v_" data-name=" v  разгонят все застойные явления v  улучшат обмен веществ v  " class="cls-1" x="5.085" y="-169.481"><tspan dy="43.2">v  разгонят все застойные явления</tspan><tspan x="5.085" dy="43.2">v  улучшат обмен веществ</tspan><tspan x="5.085" dy="43.2">v  избавят от болей, одышки</tspan><tspan x="5.085" dy="43.2">v  укрепят иммунитет</tspan><tspan x="5.085" dy="43.2">v  повысят выносливость</tspan></text>
+    <path id="Rectangle_3_copy_4" data-name="Rectangle 3 copy 4" class="cls-2" d="M3.5,0h22A3.5,3.5,0,0,1,29,3.5v26A3.5,3.5,0,0,1,25.5,33H3.5A3.5,3.5,0,0,1,0,29.5V3.5A3.5,3.5,0,0,1,3.5,0Z"/>
+  </g>
+</svg>
